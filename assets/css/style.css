@@ -1,0 +1,147 @@
+/* ********** Custom Properties ********** */
+
+:root {
+    --primary-font: monospace, 'Courier New', Courier;
+    --secondary-font: 'Montserrat', sans-serif;
+    --third-font: 'Inconsolata', monospace;
+
+    --primary-color: #333333;
+    --secondary-color: #4F4F4F;
+    --third-color: #BDBDBD;
+}
+
+/* ********** Reset ********** */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 1.5rem;
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ********** Components ********** */
+
+.article {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+/* ********** Utilities ********** */
+
+.btn {
+    border: none;
+    color: #FFF;
+    font-size: .9em;
+    padding: 1.2rem 2.2rem;
+    text-transform: uppercase;
+}
+
+/* ********** Site Styles ********** */
+
+/* Header */
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+header h1 {
+    font-family: var(--third-font);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* Main */
+main {
+    width: 100%;
+    height: 80vh;
+}
+
+#not-found-body {
+    width: 100%;
+    flex-direction: column;
+    font-family: var(--primary-font);
+}
+
+#not-found-body__image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+#not-found-body__image-section img {
+    max-width: 550px;
+}
+
+#not-found-body__info-section {
+    width: 100%;
+}
+
+#not-found-body__info-section h2 {
+    margin-top: 3rem;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#not-found-body__info-section p {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#not-found-body__info-section button {
+    background-color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--third-color);
+    margin-top: 6rem;
+}
+
+footer span {
+    display: block;
+}
+
+@media (min-width:64rem) {
+
+    /* Main */
+    #not-found-body {
+        flex-direction: initial;
+        gap: 3rem;
+    }
+
+    #not-found-body__info-section h2,
+    p {
+        width: 75%;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 0rem;
+    }
+}
