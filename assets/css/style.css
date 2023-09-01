@@ -53,11 +53,6 @@ img {
 /* ********** Site Styles ********** */
 
 /* Header */
-header {
-    width: 100%;
-    height: 10vh;
-}
-
 header h1 {
     font-family: var(--third-font);
     font-weight: 700;
@@ -65,11 +60,6 @@ header h1 {
 }
 
 /* Main */
-main {
-    width: 100%;
-    height: 80vh;
-}
-
 #not-found-body {
     width: 100%;
     flex-direction: column;
@@ -115,21 +105,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 10vh;
     text-align: center;
     font-family: var(--secondary-font);
     color: var(--third-color);
-    margin-top: 6rem;
 }
 
 footer span {
     display: block;
+    margin: 6rem 0  3rem 0;
 }
 
 @media (min-width:64rem) {
-
     /* Main */
+    main{
+        min-height: 80vh;
+    }
     #not-found-body {
         flex-direction: initial;
         gap: 3rem;
