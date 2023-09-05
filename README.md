@@ -6,7 +6,6 @@
 
 <div align="center">
   <h3>
-    <span> | </span>
     <a href="https://riveraaj.github.io/404/">
       Solution
     </a>
@@ -29,7 +28,7 @@
 
 ![screenshot](https://raw.githubusercontent.com/riveraaj/404/main/assets/img/Untitled.png)
 
-- You can see the page in the following link: [(https://riveraaj.github.io/404/)]
+- You can see the page in the following link: https://riveraaj.github.io/404/
 - In this small project I was able to improve good practices in CSS3, layout and structure in HTML5.
 
 ### Built With
